@@ -6,6 +6,7 @@
 @import './Sass/utilities.scss' ;
 @import './Sass/Themes/colors.scss';
 @import './Sass/Themes/fonts.scss';
+@import './Sass/Components/buttons.scss';
 
 :root {
     --clr-dark: 230 35% 7%;
@@ -68,6 +69,20 @@ textarea,
 select {
     font: inherit;
 }
+
+.numbered-title {
+    font-family: var(--ff-sans-cond);
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+}
+
+.numbered-title span {
+    margin-right: .5em;
+    font-weight: 700;
+    color: hsl( var(--clr-white) /.25 );
+}
+
 
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {  
