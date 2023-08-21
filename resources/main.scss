@@ -4,7 +4,8 @@
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
 @import './Sass/utilities.scss' ;
-@import './Sass/Colors/colors.scss';
+@import './Sass/Themes/colors.scss';
+@import './Sass/Themes/fonts.scss';
 
 :root {
     --clr-dark: 230 35% 7%;
@@ -32,9 +33,23 @@ picture {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
 // set up the body
 
 body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-dark) );
     line-height: 1.5;
     min-height: 100vh;
 }
