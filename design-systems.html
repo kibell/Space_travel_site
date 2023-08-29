@@ -132,7 +132,27 @@
         <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
 
         <!-- navigation -->
-        <div></div>
+        <div>
+          <nav>
+            <ul class="primary-navigation flex underline-indicators">
+              <li class="active">
+                <a class="text-uppercase text-white letter-spacing-2" href="#"
+                  ><span>01</span>Active</a
+                >
+              </li>
+              <li>
+                <a class="text-uppercase text-white letter-spacing-2" href="#"
+                  ><span>02</span>Hovered</a
+                >
+              </li>
+              <li>
+                <a class="text-uppercase text-white letter-spacing-2" href="#"
+                  ><span>03</span>Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="d-flex">
           <div style="margin-top: 5rem">
@@ -146,10 +166,40 @@
 
           <div style="margin-bottom: 50vh">
             <!-- Tabs -->
-
+            <div class="tab-list underline-indicators d-flex">
+              <button
+                aria-selected="true"
+                class="text-uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="text-uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="text-uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
+              >
+                Europa
+              </button>
+            </div>
             <!-- Dots -->
-
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="visually-hidden">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="visually-hidden">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="visually-hidden">Slide title</span>
+              </button>
+            </div>
             <!-- Numbers -->
+            
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 :root {
      /* font-sizes */
-     --fs-900: 9.375rem;
+     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
      --fs-800: 6.25rem;
      --fs-700: 3.5rem;
      --fs-600: 2rem;
@@ -36,3 +36,23 @@
 .ff-serif { font-family: var(--ff-serif); } 
 .ff-sans-cond { font-family: var(--ff-sans-cond); } 
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
+
+@media (min-width: 35em) {
+    :root {
+        --fs-900: 9.375rem;
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-400: 1rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        /* font-sizes */
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-400: 1.125rem;
+    }
+}
