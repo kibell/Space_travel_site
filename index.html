@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link href="./resources/main.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
   </head>
   <body class="home">
     <header class="primary-header d-flex">
@@ -21,8 +22,15 @@
           class="logo"
         />
       </div>
+      <button class="mobile-nav-toggle">
+        <span class="visually-hidden" aria-expanded="false">Menu</span>
+      </button>
       <nav>
-        <ul class="primary-navigation underline-indicators d-flex">
+        <ul
+          id="primary-navigation"
+          class="primary-navigation underline-indicators d-flex"
+          data-visible="false"
+        >
           <li class="active">
             <a
               class="ff-sans-cond text-uppercase text-white letter-spacing-2"
@@ -55,7 +63,7 @@
       </nav>
     </header>
 
-    <div class="grid-container grid-container--home">
+    <main class="grid-container grid-container--home">
       <div>
         <h1
           class="text-accent fs-500 ff-sans-cond text-uppercase letter-spacing-1"
@@ -75,7 +83,7 @@
           >Explore</a
         >
       </div>
-    </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
