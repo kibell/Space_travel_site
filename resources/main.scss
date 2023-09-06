@@ -104,6 +104,14 @@ select {
 }
 }
 
+// destination layout
+
+.grid-container--destination {
+    grid-template-areas: 
+    'title'
+    'image';
+}
+
 .numbered-title {
     font-family: var(--ff-sans-cond);
     font-size: var(--fs-500);
